@@ -27,7 +27,7 @@ var path = {
   src: { 
       html: 'src/*.html', 
       js: 'src/js/main.js',
-      jsx: 'src/js/jsx/main.js',
+      jsx: 'src/jsx/main.js',
       style: 'src/style/main.scss',
       img: 'src/img/**/*.*', 
       fonts: 'src/fonts/**/*.*'
@@ -35,7 +35,7 @@ var path = {
   watch: { 
       html: 'src/**/*.html',
       js: 'src/js/**/*.js',
-      jsx: 'src/js/**/*.jsx',
+      jsx: 'src/jsx/**/*.jsx',
       style: 'src/style/**/*.scss',
       img: 'src/img/**/*.*',
       fonts: 'src/fonts/**/*.*'
