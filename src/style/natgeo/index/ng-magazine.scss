@@ -1,3 +1,82 @@
+%ng-sprite_icons {
+    background-image: url(../../img/natgeo/ng-sprite_icons.png);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+%ng-sprite_icons_hover {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
+}
+
+%ng-sprite_icons_sub-menu {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
+}
+
+%latest_news__item_star_empty {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    margin-left: 2px;
+    float: left;
+    background-position: -5px -51px;
+}
+
+%latest_news__item_star_full {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    float: left;
+    margin-left: 2px;
+    background-position: -28px -51px;
+}
+
+%latest_news__item {
+    height: 238px;
+    width: 338px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+
+%latest_news__item_bg {
+    height: 146px;
+    width: 327px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfbfb;
+}
+
+%latest_news__item_pic_size {
+    height: 100px;
+    width: 319px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+%latest_news__item_subscr {
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 13px;
+    color: #777777;
+}
+
+%table__item {
+    height: 66px;
+    width: 76px;
+    border: 1px solid #e8e8e8;
+    color: #777777;
+    background-color: #ffffff;
+}
+
+%slider-pic__menu_item {
+    height: 30px;
+    width: 26px;
+    float: left;
+    line-height: 30px;
+}
+
 .magazine {
     height: 272px;
     width: 940px;
@@ -9,6 +88,85 @@
     	margin-top: 12px;
     	border: 1px solid #e8e8e8;
     	background-color: #ffffff;
+
+    	.magazine-menu__icon {
+    		background-image: url(../../img/natgeo/ng-magazine-mini.png);
+    		background-repeat: no-repeat;
+    		display: block;
+    		height: 15px;
+    		width: 15px;
+    		margin-top: 7px;
+    		margin-left: 12px;
+			float: left;
+    	}
+
+    	.magazine-menu__title {
+    		margin-top: 8px;
+    		margin-left: 10px;
+    		float: left;
+    		display: inline-block;
+    		font-weight: bold;
+            font-size: 13px;
+            color: #777777;
+    	}
+
+        .side-bar-events-nav-bg-left {
+            height: 30px;
+            width: 37px;
+            float: right;
+
+            .side-bar-events-nav__left {
+                @extend %ng-sprite_icons;
+                width: 22px;
+                height: 22px;
+                margin-top: 4px;
+                margin-right: 8px;
+                float: right;
+                background-position: -64px -73px;
+                
+            }
+        }
+
+        .side-bar-events-nav-bg-left:hover {
+            background: #f3f3f3;
+            cursor: pointer;
+        }
+
+        .side-bar-events-nav__spliter {
+            height: 19px;
+            width: 1px;
+            margin-top: 5px;
+            display: inline-block;
+            float: right;
+            background-color: #eaeaea;
+        }
+
+        .side-bar-events-nav-bg-right {
+            height: 30px;
+            width: 37px;
+            float: right;
+
+            .side-bar-events-nav__right {
+                @extend %ng-sprite_icons;
+                width: 22px;
+                height: 22px;
+                margin-top: 4px;
+                margin-right: 8px;
+                float: right;
+                display: inline-block;
+                background-position: -64px -73px;
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -webkit-transform: rotate(15deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+
+        .side-bar-events-nav-bg-right:hover {
+            background: #f3f3f3;
+            cursor: pointer;
+        }
     }
 
     .magazine-item-list {

@@ -116,9 +116,9 @@
                 border-right: 1px solid #e8e8e8;
 
                 .title-set-button-bg__text {
-                    width: 70px;
+                    width: 80px;
                     margin-top: 4px;
-                    margin-left: 35px;
+                    margin-left: 25px;
                     float: left;
                     font-size: 14px;
                     color: #dddddd;
@@ -131,7 +131,7 @@
                     border-width: 9px 9px 0 9px;
                     border-color: #dddddd transparent transparent transparent;
                     display: inline-block;
-                    margin-left: 7px;
+                    margin-left: 3px;
                     margin-top:7px;
                 }
             }
@@ -280,6 +280,10 @@
                 }
             }
 
+            .lion-bg:hover {
+                cursor: pointer;
+            }
+
             .lion__subscr {
                 @extend %latest_news__item_subscr;
             }
@@ -361,6 +365,10 @@
                         }
                     }
                 }
+            }
+
+            .gorilla-bg:hover {
+                cursor: pointer;
             }
 
             .gorilla__subscr {
@@ -448,6 +456,10 @@
                 }
             }
 
+            .penguins-bg:hover {
+                cursor: pointer;
+            }
+
             .penguins__subscr {
                 @extend %latest_news__item_subscr;
             }
@@ -530,6 +542,10 @@
                         }
                     }
                 }
+            }
+
+            .shark-bg:hover {
+                cursor: pointer;
             }
 
             .shark__subscr {
