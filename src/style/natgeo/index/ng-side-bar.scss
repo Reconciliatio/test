@@ -1,0 +1,285 @@
+%ng-sprite_icons {
+    background-image: url(../../img/natgeo/ng-sprite_icons.png);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+%ng-sprite_icons_hover {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
+}
+
+%ng-sprite_icons_sub-menu {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
+}
+
+%latest_news__item_star_empty {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    margin-left: 2px;
+    float: left;
+    background-position: -5px -51px;
+}
+
+%latest_news__item_star_full {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    float: left;
+    margin-left: 2px;
+    background-position: -28px -51px;
+}
+
+%latest_news__item {
+    height: 238px;
+    width: 338px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+
+%latest_news__item_bg {
+    height: 146px;
+    width: 327px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfbfb;
+}
+
+%latest_news__item_pic_size {
+    height: 100px;
+    width: 319px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+%latest_news__item_subscr {
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 13px;
+    color: #777777;
+}
+
+%table__item {
+    height: 66px;
+    width: 76px;
+    border: 1px solid #e8e8e8;
+    color: #777777;
+    background-color: #ffffff;
+}
+
+%filter__triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 0 9px;
+    border-color: #555555 transparent transparent transparent;
+    display: inline-block;
+    margin-left: 9px;
+    margin-right: 54px;
+    margin-top:9px;
+    visibility: hidden;
+}
+
+%slider-pic__menu_item {
+    height: 30px;
+    width: 26px;
+    float: left;
+    line-height: 30px;
+}
+
+.side-bar {
+    height: 883px;
+    width: 236px;
+    margin-top: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    display: inline-block;
+
+    .side-bar-news {
+        height: 342px;
+        width: 222px;
+        margin-left: 12px;
+
+        .side-bar-news-title {
+            height: 30px;
+            width: 220px;
+            border: 1px solid #e8e8e8;
+            background-color: #ffffff;
+        }
+
+        .side-bar-news-content {
+            height: 303px;
+            width: 222px;
+            margin-top: 7px;
+            background-color: #ffffff;
+
+            .side-bar-news-content-snake {
+                height: 146px;
+                width: 220px;
+                border: 1px solid #e8e8e8;
+
+                .side-bar-news-content-snake__pic {
+                    height: 100px;
+                    width: 214px;
+                    background-image: url(../../img/natgeo/ng-pic_snake.png);
+                }
+
+                .snake-bg-title-rate {
+                    height: 42px;
+                    width: 75px;
+                    float: right;
+
+                    .snake-bg-title-rate-stars {
+                        height: 12px;
+                        width: 75px;
+
+                        .snake-bg-title-rate-stars__first {
+                            @extend %latest_news__item_star_full;
+                        }
+
+                        .snake-bg-title-rate-stars__second {
+                            @extend %latest_news__item_star_full;
+                        }
+
+                        .snake-bg-title-rate-stars__third {
+                            @extend %latest_news__item_star_full;
+                        }
+
+                        .snake-bg-title-rate-stars__fourth {
+                            @extend %latest_news__item_star_full;
+                        }
+
+                        .snake-bg-title-rate-stars__fifth {
+                            @extend %latest_news__item_star_empty;
+                        }
+                    }
+
+                    .snake-bg-title-rate__votes {
+                        margin-top: 4px;
+                        margin-left: 4px;
+                        font-size: 12px;
+                        color: #a0a0a0;
+                    }
+                }
+            }
+
+            .side-bar-news-content-pangolin {
+                height: 146px;
+                width: 220px;
+                margin-top: 7px;
+                border: 1px solid #e8e8e8;
+
+                .side-bar-news-content-pangolin__pic {
+                    height: 100px;
+                    width: 214px;
+                    background-image: url(../../img/natgeo/ng-pic_pangolin.png);
+                }
+
+                .pangolin-bg-title-rate {
+                    height: 42px;
+                    width: 75px;
+                    float: right;
+
+                    .pangolin-bg-title-rate-stars {
+                        height: 12px;
+                        width: 75px;
+
+                        .pangolin-bg-title-rate-stars__first {
+                            @extend %latest_news__item_star_full;
+                        }
+
+                        .pangolin-bg-title-rate-stars__second {
+                            @extend %latest_news__item_star_full;
+                        }
+
+                        .pangolin-bg-title-rate-stars__third {
+                            @extend %latest_news__item_star_full;
+                        }
+
+                        .pangolin-bg-title-rate-stars__fourth {
+                            @extend %latest_news__item_star_full;
+                        }
+
+                        .pangolin-bg-title-rate-stars__fifth {
+                            @extend %latest_news__item_star_empty;
+                        }
+                    }
+
+                    .pangolin-bg-title-rate__votes {
+                        margin-top: 4px;
+                        margin-left: 4px;
+                        font-size: 12px;
+                        color: #a0a0a0;
+                    }
+                }
+            }
+        }
+    }
+
+    .side-bar-videos {
+        height: 266px;
+        width: 222px;
+        margin-top: 14px;
+        margin-left: 12px;
+
+        .side-bar-videos-title {
+            height: 30px;
+            width: 220px;
+            border: 1px solid #e8e8e8;
+            background-color: #ffffff;
+        }
+
+        .side-bar-videos-content {
+            height: 228px;
+            width: 222px;
+            margin-top: 6px;
+            background-color: #ffffff;
+
+            .side-bar-videos-content-parrot {
+                height: 109px;
+                width: 220px;
+                border: 1px solid #e8e8e8;
+            }
+
+            .side-bar-videos-content-fish {
+                height: 109px;
+                width: 220px;
+                margin-top: 6px;
+                border: 1px solid #e8e8e8;
+            }
+        }
+    }
+
+    .side-bar-events {
+        height: 184px;
+        width: 222px;
+        margin-top: 14px;
+        margin-left: 12px;
+
+        .side-bar-events-title {
+            height: 30px;
+            width: 220px;
+            border: 1px solid #e8e8e8;
+            background-color: #ffffff;
+        }
+
+        .side-bar-events-content {
+            height: 146px;
+            width: 222px;
+            margin-top: 6px;
+            border: 1px solid #e8e8e8;
+            background-color: #ffffff;
+        }
+    }
+
+    .side-bar-shop {
+        height: 33px;
+        width: 222px;
+        margin-top: 13px;
+        margin-left: 12px;
+        border: 1px solid #e8e8e8;
+        background-color: #ffffff;
+    }
+}

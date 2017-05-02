@@ -1,0 +1,382 @@
+%ng-sprite_icons {
+    background-image: url(../../img/natgeo/ng-sprite_icons.png);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+%ng-sprite_icons_hover {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
+}
+
+%ng-sprite_icons_sub-menu {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
+}
+
+%latest_news__item_star_empty {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    margin-left: 2px;
+    float: left;
+    background-position: -5px -51px;
+}
+
+%latest_news__item_star_full {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    float: left;
+    margin-left: 2px;
+    background-position: -28px -51px;
+}
+
+%latest_news__item {
+    height: 238px;
+    width: 338px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+
+%latest_news__item_bg {
+    height: 146px;
+    width: 327px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfbfb;
+}
+
+%latest_news__item_pic_size {
+    height: 100px;
+    width: 319px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+%latest_news__item_subscr {
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 13px;
+    color: #777777;
+}
+
+%table__item {
+    height: 66px;
+    width: 76px;
+    border: 1px solid #e8e8e8;
+    color: #777777;
+    background-color: #ffffff;
+}
+
+.sub-menu {
+    height: 367px;
+    width: 173px;
+    margin-top: 40px;
+    //background-color: red;
+    float: left;
+    border-right: 1px solid #e8e8e8;
+
+    .table {
+        margin-top: -5px;
+        margin-left: -7px;
+        border-collapse: separate;
+        border-spacing: 7px 5px;
+
+        .table__item-current {
+            border: 1px solid #555555;
+            background-color: #555555;
+            cursor: pointer;
+
+            .table__item_icon-news {
+                @extend %ng-sprite_icons;
+                width: 26px;
+                height: 22px;
+                margin-top: 14px;
+                margin-left: 25px;
+                background-position: -182px -5px;
+            }
+
+            .table__item_text-news {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+
+            .table__item_text-current {
+                color: #ffffff;
+            }
+        }
+
+        .table__item-magazine {
+            @extend %table__item;
+
+            .table__item_icon-magazine {
+                @extend %ng-sprite_icons;
+                width: 26px;
+                height: 26px;
+                margin-top: 8px;
+                margin-left: 25px;
+                background-position: -177px -123px;
+            }
+
+            .table__item_text-magazine {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+
+       .table__item-magazine:hover {
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .table__item-magazine:hover .table__item_icon-magazine {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -41px -74px;
+        }
+
+        .table__item-maps {
+            @extend %table__item;
+
+            .table__item_icon-maps {
+                @extend %ng-sprite_icons;
+                width: 26px;
+                height: 26px;
+                margin-top: 10px;
+                margin-left: 25px;
+                background-position: -177px -159px;
+            } 
+
+            .table__item_text-maps {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 23px;
+            }
+        }
+
+        .table__item-maps:hover {
+                background-color: #555555;
+                cursor: pointer;
+                color: #ffffff;
+        }
+
+        .table__item-maps:hover .table__item_icon-maps {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -106px -5px;
+        }  
+
+        .table__item-science {
+            @extend %table__item;
+
+            .table__item_icon-science {
+                @extend %ng-sprite_icons;
+                width: 23px;
+                height: 26px;
+                margin-top: 10px;
+                margin-left: 27px;
+                background-position: -219px -51px;
+            }
+
+            .table__item_text-science {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 16px;
+            }
+        }
+
+       .table__item-science:hover {
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .table__item-science:hover .table__item_icon-science {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -106px -41px;
+        }
+
+        .table__item-education {
+            @extend %table__item;
+
+            .table__item_icon-education {
+                @extend %ng-sprite_icons;
+                width: 32px;
+                height: 25px;
+                margin-top: 14px;
+                margin-left: 22px;
+                background-position: -77px -37px;
+            }
+
+            .table__item_text-education {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        .table__item-education:hover {
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+            .table__item-education:hover .table__item_icon-education {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -41px -5px;
+        }
+
+        .table__item-games {
+            @extend %table__item;
+
+            .table__item_icon-games {
+                @extend %ng-sprite_icons;
+                width: 26px;
+                height: 25px;
+                margin-top: 14px;
+                margin-left: 24px;
+                background-position: -28px -73px;
+            }
+
+            .table__item_text-games {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 17px;
+            }
+        }
+
+       .table__item-games:hover {
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .table__item-games:hover .table__item_icon-games {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -5px -74px;
+        }
+
+        .table__item-events {
+            @extend %table__item;
+
+            .table__item_icon-events {
+                @extend %ng-sprite_icons;
+                width: 26px;
+                height: 26px;
+                margin-top: 14px;
+                margin-left: 24px;
+                background-position: -154px -37px;
+            }
+
+            .table__item_text-events {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 18px;
+            }
+        }
+
+        .table__item-events:hover {
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .table__item-events:hover .table__item_icon-events {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -41px -38px;
+        }
+
+        .table__item-blogs {
+            @extend %table__item;
+
+            .table__item_icon-blogs {
+                @extend %ng-sprite_icons;
+                width: 26px;
+                height: 26px;
+                margin-top: 14px;
+                margin-left: 26px;
+                background-position: -41px -5px;
+            }
+
+            .table__item_text-blogs {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 22px;
+            }
+        }
+
+        .table__item-blogs:hover {
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .table__item-blogs:hover .table__item_icon-blogs {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -5px -5px;
+        }
+
+        .table__item-explorers {
+            @extend %table__item;
+
+            .table__item_icon-explorers {
+                @extend %ng-sprite_icons;
+                width: 19px;
+                height: 26px;
+                margin-top: 14px;
+                margin-left: 26px;
+                background-position: -190px -37px;
+            }
+
+            .table__item_text-explorers {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        .table__item-explorers:hover {
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .table__item-explorers:hover .table__item_icon-explorers {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -77px -38px;
+        }
+
+        .table__item-trips {
+            @extend %table__item;
+
+            .table__item_icon-trips {
+                @extend %ng-sprite_icons;
+                width: 26px;
+                height: 21px;
+                margin-top: 14px;
+                margin-left: 26px;
+                background-position: -128px -170px;
+            }
+
+            .table__item_text-trips {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 22px;
+            }
+        }
+
+        .table__item-trips:hover {
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .table__item-trips:hover .table__item_icon-trips {
+            @extend %ng-sprite_icons_sub-menu;
+            background-position: -5px -41px;
+        }
+    }
+}

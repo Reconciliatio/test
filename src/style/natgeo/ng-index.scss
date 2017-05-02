@@ -1,0 +1,213 @@
+html {
+    background-color: #fbfbfb;
+}
+
+%ng-sprite_icons {
+    background-image: url(../../img/natgeo/ng-sprite_icons.png);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+%ng-sprite_icons_hover {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
+}
+
+%ng-sprite_icons_sub-menu {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
+}
+
+%latest_news__item_star_empty {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    margin-left: 2px;
+    float: left;
+    background-position: -5px -51px;
+}
+
+%latest_news__item_star_full {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    float: left;
+    margin-left: 2px;
+    background-position: -28px -51px;
+}
+
+%latest_news__item {
+    height: 238px;
+    width: 338px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+
+%latest_news__item_bg {
+    height: 146px;
+    width: 327px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfbfb;
+}
+
+%latest_news__item_pic_size {
+    height: 100px;
+    width: 319px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+%latest_news__item_subscr {
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 13px;
+    color: #777777;
+}
+
+%table__item {
+    height: 66px;
+    width: 76px;
+    border: 1px solid #e8e8e8;
+    color: #777777;
+    background-color: #ffffff;
+}
+
+%filter__triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 0 9px;
+    border-color: #555555 transparent transparent transparent;
+    display: inline-block;
+    margin-left: 9px;
+    margin-right: 54px;
+    margin-top:9px;
+    visibility: hidden;
+}
+
+%slider-pic__menu_item {
+    height: 30px;
+    width: 26px;
+    float: left;
+    line-height: 30px;
+}
+
+/*= natgeo/index/ng-vendors.scss */
+
+/*= natgeo/index/ng-wrapper.scss */
+
+/*= natgeo/index/ng-menu.scss */
+
+/*= natgeo/index/ng-side-bar.scss */
+
+
+.wrapper-content {
+    float: left;
+
+    /*= natgeo/index/ng-sub-menu.scss */
+
+    /*= natgeo/index/ng-slider.scss */
+
+    /*= natgeo/index/ng-content.scss */
+}
+
+/*= natgeo/index/ng-side-bar.scss */
+
+/*= natgeo/index/ng-magazine.scss */
+
+/*= natgeo/index/ng-footer.scss */
+
+
+
+
+
+
+
+
+
+
+.sprite-calendaricon {
+    width: 16px;
+    height: 16px;
+    background-position: -77px -5px;
+}
+
+.sprite-cameraicon {
+    width: 16px;
+    height: 12px;
+    background-position: -103px -5px;
+}
+
+.sprite-checkboxicon {
+    width: 18px;
+    height: 18px;
+    background-position: -129px -5px;
+}
+
+.sprite-clock {
+    width: 15px;
+    height: 15px;
+    background-position: -157px -5px;
+}
+
+.sprite-environment {
+    width: 25px;
+    height: 25px;
+    background-position: -119px -37px;
+}
+
+.sprite-facebook {
+    width: 13px;
+    height: 25px;
+    background-position: -5px -73px;
+}
+
+.sprite-pause {
+    width: 14px;
+    height: 16px;
+    background-position: -5px -195px;
+}
+
+.sprite-play {
+    width: 36px;
+    height: 36px;
+    background-position: -219px -5px;
+}
+
+.sprite-shopbasketicon {
+    width: 18px;
+    height: 18px;
+    background-position: -213px -118px;
+}
+
+.sprite-staricon {
+    width: 16px;
+    height: 16px;
+    background-position: -241px -144px;
+}
+
+.sprite-subscribeicon {
+    width: 17px;
+    height: 17px;
+    background-position: -65px -170px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 25px;
+    background-position: -65px -206px;
+}
+
+.sprite-video {
+    width: 26px;
+    height: 14px;
+    background-position: -5px -170px;
+}
+
+.sprite-youtube {
+    width: 19px;
+    height: 19px;
+    background-position: -105px -206px;
+}

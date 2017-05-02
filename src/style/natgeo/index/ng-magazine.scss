@@ -1,0 +1,54 @@
+.magazine {
+    height: 272px;
+    width: 940px;
+    display: inline-block;
+
+    .magazine-menu {
+    	height: 30px;
+    	width: 938px;
+    	margin-top: 12px;
+    	border: 1px solid #e8e8e8;
+    	background-color: #ffffff;
+    }
+
+    .magazine-item-list {
+		height: 200px;
+		width: 940px;
+		margin-top: 10px;
+
+	    .magazine-item-list__item_first {
+	    	height: 198px;
+	    	width: 225px;
+	    	margin-right: 10px;
+	    	float: left;
+	    	border: 1px solid #e8e8e8;
+	    	background-color: #ffffff;
+	    }
+
+	    .magazine-item-list__item_second {
+	    	height: 198px;
+	    	width: 226px;
+	    	margin-right: 10px;
+	    	float: left;
+	    	border: 1px solid #e8e8e8;
+	    	background-color: #ffffff;
+	    }
+
+	    .magazine-item-list__item_third {
+	    	height: 198px;
+	    	width: 226px;
+	    	margin-right: 10px;
+	    	float: left;
+	    	border: 1px solid #e8e8e8;
+	    	background-color: #ffffff;	
+	    }
+
+	    .magazine-item-list__item_fourth {
+	    	height: 198px;
+	    	width: 225px;
+	    	float: left;
+	    	border: 1px solid #e8e8e8;
+	    	background-color: #ffffff;
+	    }
+    }
+}

@@ -1,0 +1,15 @@
+%ng-sprite_icons {
+    background-image: url(../../img/natgeo/ng-sprite_icons.png);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+%ng-sprite_icons_hover {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
+}
+
+%ng-sprite_icons_sub-menu {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
+}

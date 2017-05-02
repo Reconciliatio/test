@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
     babel = require("gulp-babel"),
+    es = require('event-stream'),
     reload = browserSync.reload;
 
 var path = {
@@ -25,10 +26,10 @@ var path = {
       fonts: 'build/fonts/'
   },
   src: { 
-      html: 'src/*.html', 
-      js: 'src/js/main.js',
-      jsx: 'src/jsx/main.js',
-      style: 'src/style/main.scss',
+      html: 'src/**/*.html', 
+      js: 'src/js/index.js',
+      jsx: 'src/jsx/index.js',
+      style: 'src/style/**/*.scss',
       img: 'src/img/**/*.*', 
       fonts: 'src/fonts/**/*.*'
   },
@@ -39,6 +40,10 @@ var path = {
       style: 'src/style/**/*.scss',
       img: 'src/img/**/*.*',
       fonts: 'src/fonts/**/*.*'
+  },
+  ignore: {
+      html: ['!src/html/coming_soon/template/*.*', '!html/natgeo/template'],
+      img: ['!src/img/coming_soon/partials/*.*', '!img/natgeo/partials/*.*']
   },
   clean: './build'
 };
@@ -89,6 +94,7 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
     gulp.src(path.src.style)
         .pipe(sourcemaps.init())
+        .pipe(rigger())
         .pipe(sass())
         .pipe(prefixer())
         .pipe(cssmin())

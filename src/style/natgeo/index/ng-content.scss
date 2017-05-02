@@ -1,0 +1,540 @@
+%ng-sprite_icons {
+    background-image: url(../../img/natgeo/ng-sprite_icons.png);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+%ng-sprite_icons_hover {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
+}
+
+%ng-sprite_icons_sub-menu {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
+}
+
+%latest_news__item_star_empty {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    margin-left: 2px;
+    float: left;
+    background-position: -5px -51px;
+}
+
+%latest_news__item_star_full {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    float: left;
+    margin-left: 2px;
+    background-position: -28px -51px;
+}
+
+%latest_news__item {
+    height: 238px;
+    width: 338px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+
+%latest_news__item_bg {
+    height: 146px;
+    width: 327px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfbfb;
+}
+
+%latest_news__item_pic_size {
+    height: 100px;
+    width: 319px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+%latest_news__item_subscr {
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 13px;
+    color: #777777;
+}
+
+.content {
+    height: 565px;
+    width: 702px;
+    margin-top: -9px;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+
+    .title-set {
+        height: 30px;
+        width: 502px;
+        margin-top: 17px;
+        margin-left: 186px;
+        position: absolute;
+        border: 1px solid #e8e8e8;
+        background-color: #ffffff;
+
+        .title-set__clock {
+            @extend %ng-sprite_icons;
+            width: 15px;
+            height: 15px;
+            margin-top: 8px;
+            margin-left: 12px;
+            float: left;
+            background-position: -157px -5px;
+        }
+
+        .title-set__text {
+            margin-top: 10px;
+            margin-left: 10px;
+            float: left;
+            display: inline-block;
+            font-size: 14px;
+            color: #777777;
+        }
+
+        .title-set-button {
+            height: 26px;
+            width: 140px;
+            margin-top: 3px;
+            margin-left: 18px;
+            float: left;
+            display: inline-block;
+            border: 1px solid #ffffff;
+            border-bottom: 1px solid #e8e8e8;
+
+            .title-set-button-bg {
+                height: 19px;
+                width: 140px;
+                margin-top: 2px;
+                margin-left: -1px;
+                border-left: 1px solid #e8e8e8;
+                border-right: 1px solid #e8e8e8;
+
+                .title-set-button-bg__text {
+                    width: 70px;
+                    margin-top: 4px;
+                    margin-left: 35px;
+                    float: left;
+                    font-size: 14px;
+                    color: #dddddd;
+                }
+
+                .title-set-button-gb__triangle {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 9px 9px 0 9px;
+                    border-color: #dddddd transparent transparent transparent;
+                    display: inline-block;
+                    margin-left: 7px;
+                    margin-top:7px;
+                }
+            }
+        }
+
+        .title-set-button:hover {
+            border: 1px solid #e8e8e8;
+            cursor: pointer;
+            color: #777777;
+        }
+
+        .title-set-button:hover .title-set-button-bg__text {
+            color: #777777;
+        }
+
+        .title-set-button:hover .title-set-button-gb__triangle {
+            border-color: #a8a8a8 transparent transparent transparent;
+        }
+
+        .title-set_grid_bg {
+            height: 30px;
+            width: 40px;
+            float: right;
+            background-color: #555555;
+            //@extend %ng-sprite_icons;
+
+            .title-set__grid_icon {
+                @extend %ng-sprite_icons;
+                width: 16px;
+                height: 16px;
+                margin-top: 7px;
+                margin-left: 12px;
+                background-position: -96px -73px;
+            }
+        }
+
+        .title-set_grid_bg:hover {
+            background-color: #fdcc05;
+            cursor: pointer;
+        }
+
+        .title-set_list_bg {
+            height: 30px;
+            width: 40px;
+            float: right;
+            background-color: #fdcc05;
+
+            .title-set__list_icon {
+                @extend %ng-sprite_icons;
+                width: 16px;
+                height: 14px;
+                margin-top: 9px;
+                margin-left: 12px;
+                background-position: -189px -73px;
+            }
+        }
+
+        .title-set_list_bg:hover {
+            background-color: #fdcc05;  
+            cursor: pointer;
+        }
+    }
+
+    .latest_news {
+        height: 491px;
+        width: 689px;
+        margin-top: 12px;
+        display: inline-block;
+
+        .lion {
+            @extend %latest_news__item;
+            margin-right: 9px;
+            float: left;
+
+            .lion-bg {
+                @extend %latest_news__item_bg;
+
+                .lion-bg__pic {
+                    @extend %latest_news__item_pic_size;
+                    background-image: url(../../img/natgeo/ng-pic_lion.png);
+                    background-repeat: no-repeat;
+                    background-position: 0px;            
+                }
+
+                .lion-bg-title {
+                    height: 27px;
+                    width: 317px;
+                    margin-top: 8px;
+                    margin-left: 5px;
+
+                    .lion-bg-title-text {
+                        height: 27px;
+                        width: 200px;
+                        float: left;
+
+                        .lion-bg-title-text__title {
+                            font-weight: bold;
+                            font-size: 15px;
+                            margin-bottom: 1px;
+                            color: #777777;
+                        }
+
+                        .lion-bg-title-text__time {
+                            font-size: 12px;
+                            color: #a0a0a0;
+                        }
+                    }
+
+                    .lion-bg-title-rate {
+                        height: 27px;
+                        width: 75px;
+                        float: right;
+
+                        .lion-bg-title-rate-stars {
+                            height: 12px;
+                            width: 75px;
+
+                            .lion-bg-title-rate-stars__first {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .lion-bg-title-rate-stars__second {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .lion-bg-title-rate-stars__third {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .lion-bg-title-rate-stars__fourth {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .lion-bg-title-rate-stars__fifth {
+                                @extend %latest_news__item_star_empty;
+                            }
+                        }
+
+                        .lion-bg-title-rate__votes {
+                            margin-top: 4px;
+                            margin-left: 4px;
+                            font-size: 12px;
+                            color: #a0a0a0;
+                        }
+                    }
+                }
+            }
+
+            .lion__subscr {
+                @extend %latest_news__item_subscr;
+            }
+        }
+
+        .gorilla {
+            @extend %latest_news__item;
+            display: inline-block;
+
+            .gorilla-bg {
+                @extend %latest_news__item_bg;
+
+                .gorilla-bg__pic {
+                    @extend %latest_news__item_pic_size;
+                    background-image: url(../../img/natgeo/ng-pic_gorilla.png);
+                    background-repeat: no-repeat;
+                    background-position: 0px -76px;
+                }
+
+                .gorilla-bg-title {
+                    height: 27px;
+                    width: 317px;
+                    margin-top: 8px;
+                    margin-left: 5px;
+
+                    .gorilla-bg-title-text {
+                        height: 27px;
+                        width: 200px;
+                        float: left;
+
+                        .gorilla-bg-title-text__title {
+                            font-weight: bold;
+                            font-size: 15px;
+                            margin-bottom: 1px;
+                            color: #777777;
+                        }
+
+                        .gorilla-bg-title-text__time {
+                            font-size: 12px;
+                            color: #a0a0a0;
+                        }
+                    }
+
+                    .gorilla-bg-title-rate {
+                        height: 27px;
+                        width: 75px;
+                        float: right;
+
+                        .gorilla-bg-title-rate-stars {
+                            height: 12px;
+                            width: 75px;
+
+                            .gorilla-bg-title-rate-stars__first {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .gorilla-bg-title-rate-stars__second {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .gorilla-bg-title-rate-stars__third {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .gorilla-bg-title-rate-stars__fourth {
+                                @extend %latest_news__item_star_empty;
+                            }
+
+                            .gorilla-bg-title-rate-stars__fifth {
+                                @extend %latest_news__item_star_empty;
+                            }
+                        }
+
+                        .gorilla-bg-title-rate__votes {
+                            margin-top: 4px;
+                            margin-left: 4px;
+                            font-size: 12px;
+                            color: #a0a0a0;
+                        }
+                    }
+                }
+            }
+
+            .gorilla__subscr {
+                @extend %latest_news__item_subscr;
+            }
+        }
+
+        .penguins {
+            @extend %latest_news__item;
+            margin-top: 9px;
+            margin-right: 9px;
+            float: left;
+
+            .penguins-bg {
+                @extend %latest_news__item_bg;
+
+                .penguins-bg__pic {
+                    @extend %latest_news__item_pic_size;
+                    background-image: url(../../img/natgeo/ng-pic_penguins.png);
+                    background-repeat: no-repeat;
+                    background-position: 0px -62px;
+                }
+
+                .penguins-bg-title {
+                    height: 27px;
+                    width: 317px;
+                    margin-top: 8px;
+                    margin-left: 5px;
+
+                    .penguins-bg-title-text {
+                        height: 27px;
+                        width: 200px;
+                        float: left;
+
+                        .penguins-bg-title-text__title {
+                            font-weight: bold;
+                            font-size: 15px;
+                            margin-bottom: 1px;
+                            color: #777777;
+                        }
+
+                        .penguins-bg-title-text__time {
+                            font-size: 12px;
+                            color: #a0a0a0;
+                        }
+                    }
+
+                    .penguins-bg-title-rate {
+                        height: 27px;
+                        width: 75px;
+                        float: right;
+
+                        .penguins-bg-title-rate-stars {
+                            height: 12px;
+                            width: 75px;
+
+                            .penguins-bg-title-rate-stars__first {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .penguins-bg-title-rate-stars__second {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .penguins-bg-title-rate-stars__third {
+                                @extend %latest_news__item_star_empty;
+                            }
+
+                            .penguins-bg-title-rate-stars__fourth {
+                                @extend %latest_news__item_star_empty;
+                            }
+
+                            .penguins-bg-title-rate-stars__fifth {
+                                @extend %latest_news__item_star_empty;
+                            }
+                        }
+
+                        .penguins-bg-title-rate__votes {
+                            margin-top: 4px;
+                            margin-left: 4px;
+                            font-size: 12px;
+                            color: #a0a0a0;
+                        }
+                    }
+                }
+            }
+
+            .penguins__subscr {
+                @extend %latest_news__item_subscr;
+            }
+        }
+
+        .shark {
+            @extend %latest_news__item;
+            margin-top: 9px;
+            display: inline-block;
+
+            .shark-bg {
+                @extend %latest_news__item_bg;
+
+                .shark-bg__pic {
+                    @extend %latest_news__item_pic_size;
+                    background-image: url(../../img/natgeo/ng-pic_shark.png);
+                    background-repeat: no-repeat;
+                    background-position: 0px -98px;
+                }
+
+                .shark-bg-title {
+                    height: 27px;
+                    width: 317px;
+                    margin-top: 8px;
+                    margin-left: 5px;
+
+                    .shark-bg-title-text {
+                        height: 27px;
+                        width: 200px;
+                        float: left;
+
+                        .shark-bg-title-text__title {
+                            font-weight: bold;
+                            font-size: 15px;
+                            margin-bottom: 1px;
+                            color: #777777;
+                        }
+
+                        .shark-bg-title-text__time {
+                            font-size: 12px;
+                            color: #a0a0a0;
+                        }
+                    }
+
+                    .shark-bg-title-rate {
+                        height: 27px;
+                        width: 75px;
+                        float: right;
+
+                        .shark-bg-title-rate-stars {
+                            height: 12px;
+                            width: 75px;
+
+                            .shark-bg-title-rate-stars__first {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .shark-bg-title-rate-stars__second {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .shark-bg-title-rate-stars__third {
+                                @extend %latest_news__item_star_full;
+                            }
+
+                            .shark-bg-title-rate-stars__fourth {
+                                @extend %latest_news__item_star_empty;
+                            }
+
+                            .shark-bg-title-rate-stars__fifth {
+                                @extend %latest_news__item_star_empty;
+                            }
+                        }
+
+                        .shark-bg-title-rate__votes {
+                            margin-top: 4px;
+                            margin-left: 4px;
+                            font-size: 12px;
+                            color: #a0a0a0;
+                        }
+                    }
+                }
+            }
+
+            .shark__subscr {
+                @extend %latest_news__item_subscr;
+            }
+        }
+    }
+}

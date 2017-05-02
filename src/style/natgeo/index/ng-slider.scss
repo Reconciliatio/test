@@ -1,0 +1,303 @@
+%ng-sprite_icons {
+    background-image: url(../../img/natgeo/ng-sprite_icons.png);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+%ng-sprite_icons_hover {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
+}
+
+%ng-sprite_icons_sub-menu {
+    @extend %ng-sprite_icons;
+    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
+}
+
+%latest_news__item_star_empty {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    margin-left: 2px;
+    float: left;
+    background-position: -5px -51px;
+}
+
+%latest_news__item_star_full {
+    @extend %ng-sprite_icons;
+    width: 13px;
+    height: 12px;
+    float: left;
+    margin-left: 2px;
+    background-position: -28px -51px;
+}
+
+%latest_news__item {
+    height: 238px;
+    width: 338px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+
+%latest_news__item_bg {
+    height: 146px;
+    width: 327px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfbfb;
+}
+
+%latest_news__item_pic_size {
+    height: 100px;
+    width: 319px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+%latest_news__item_subscr {
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 13px;
+    color: #777777;
+}
+
+%table__item {
+    height: 66px;
+    width: 76px;
+    border: 1px solid #e8e8e8;
+    color: #777777;
+    background-color: #ffffff;
+}
+
+%filter__triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 0 9px;
+    border-color: #555555 transparent transparent transparent;
+    display: inline-block;
+    margin-left: 9px;
+    margin-right: 54px;
+    margin-top:9px;
+    visibility: hidden;
+}
+
+%slider-pic__menu_item {
+    height: 30px;
+    width: 26px;
+    float: left;
+    line-height: 30px;
+}
+
+.slider {
+    height: 326px;
+    width: 528px;
+    margin-top: 40px;
+    display: inline-block;
+    border-right: 1px solid #e8e8e8;
+
+    .filter {
+        background-color: #ffffff;
+        margin-left: 12px;
+        display: inline-block;
+
+        .filter__item {
+            height: 28px;
+            width: 76px;
+            margin-right: 6px;
+            float: left;
+            text-align: center;
+            font-size: 13px;
+            line-height: 28px;
+            background-color: #ffffff;
+            border: 1px solid #eeeeee;
+            color: #777777;
+
+            .filter__triangle_bg {
+                height: 0px;
+                margin-top: -8px;
+                margin-left: 21px;
+                position: absolute;
+
+                .filter__triangle_home {
+                    @extend %filter__triangle;
+                }
+                .filter__triangle_animals {
+                    @extend %filter__triangle;
+                }
+
+                .filter__triangle_ancient {
+                    @extend %filter__triangle;
+                }
+
+                .filter__triangle_energy {
+                    @extend %filter__triangle;
+                }
+
+                .filter__triangle_environment {
+                    @extend %filter__triangle;
+                }
+
+                .filter__triangle_travel {
+                    @extend %filter__triangle;
+                }
+            }
+        }
+
+        .filter__animals:hover .filter__triangle_animals {
+            visibility: visible;
+        }
+
+        .filter__ancient:hover .filter__triangle_ancient {
+            visibility: visible;
+        }
+
+        .filter__energy:hover .filter__triangle_energy {
+            visibility: visible;
+        }
+
+        .filter__environment {
+            width: 82px;
+        }
+
+        .filter__environment:hover .filter__triangle_environment {
+            visibility: visible;
+        }
+
+        .filter__travel:hover .filter__triangle_travel {
+            visibility: visible;
+        }
+
+        .filter__item:hover {
+            border: 1px solid #555555;
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .filter__home:hover .filter__triangle_home {
+            visibility: visible;
+        }
+
+        .filter__item-current {
+            border: 1px solid #555555;
+            background-color: #555555;
+            cursor: pointer;
+            color: #ffffff;
+        }
+    }
+
+    .slider-pic {
+        height: 224px;
+        width: 504px;
+        margin-top: 15px;
+        margin-left: 12px;
+        background-image: url(../../img/natgeo/ng-pic_lions.png);
+        background-position: -55px -9px;
+        background-repeat: no-repeat;
+
+        .slider-pic__menu {
+            height: 30px;
+            width: 80px;
+            float: right;
+            background-color: #555555;
+            text-align: center;
+            font-size: 15px;
+            color: #dddddd;
+
+            .slider-pic__menu_first {
+                @extend %slider-pic__menu_item;
+            }
+
+            .slider-pic__menu_first:hover {
+                background-color: #fdcc05;
+                color: #fff3d4;
+                cursor: pointer;
+            }
+
+            .slider-pic__menu_first_active {
+                background-color: #fdcc05;
+                color: #fff3d4;
+            }
+
+            .slider-pic__menu_spliter {
+                height: 19px;
+                width: 1px;
+                margin-top: 5px;
+                float: left;
+                background-color: #717171;
+            }
+
+            .slider-pic__menu_second {
+                @extend %slider-pic__menu_item;
+            }
+
+            .slider-pic__menu_second:hover {
+                background-color: #fdcc05;
+                color: #fff3d4;
+                cursor: pointer;
+            }
+
+            .slider-pic__menu_third {
+                @extend %slider-pic__menu_item;
+            }
+
+            .slider-pic__menu_third:hover {
+                background-color: #fdcc05;
+                color: #fff3d4;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .slider-subscr {
+        height: 51px;
+        width: 502px;
+        margin-left: 12px;
+        border-right: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        border-left: 1px solid #e8e8e8;
+        display: inline-block;
+        background-color: #ffffff;
+
+        .slider-subscr__text {
+            height: 51px;
+            width: 451px;
+            position: absolute;
+            border-right: 1px solid #e8e8e8;
+            color: #555555;
+
+            .slider-subscr__text_title {
+                margin-top: 9px;
+                margin-left: 13px;
+                margin-bottom: 4px;
+                font-weight: bold;
+            }
+
+            .slider-subscr__text_subscr {
+                margin-left: 13px;
+                font-size: 13px;
+            }
+        }
+
+        .slider-subscr__pause {
+            height: 50px;
+            width: 50px;
+            float: right;
+
+            .slider-subscr__pause_icon {
+                @extend %ng-sprite_icons;
+                width: 14px;
+                height: 16px;
+                margin-top: 18px;
+                margin-left: 18px;
+                background-position: -5px -195px;
+            }
+        }
+
+        .slider-subscr__pause:hover {
+            cursor: pointer;
+        }
+    }
+}
