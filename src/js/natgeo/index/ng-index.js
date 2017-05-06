@@ -1,0 +1,1 @@
+//= natgeo/index/template/ng-slider.js

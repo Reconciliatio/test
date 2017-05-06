@@ -4,23 +4,13 @@
     display: block; 
 }
 
-%ng-sprite_icons_hover {
-    @extend %ng-sprite_icons;
-    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
-}
-
-%ng-sprite_icons_sub-menu {
-    @extend %ng-sprite_icons;
-    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
-}
-
 %latest_news__item_star_empty {
     @extend %ng-sprite_icons;
     width: 13px;
     height: 12px;
     margin-left: 2px;
     float: left;
-    background-position: -5px -51px;
+    background-position: -5px -40px;
 }
 
 %latest_news__item_star_full {
@@ -29,52 +19,7 @@
     height: 12px;
     float: left;
     margin-left: 2px;
-    background-position: -28px -51px;
-}
-
-%latest_news__item {
-    height: 238px;
-    width: 338px;
-    border: 1px solid #e8e8e8;
-    background-color: #ffffff;
-}
-
-%latest_news__item_bg {
-    height: 146px;
-    width: 327px;
-    margin-top: 4px;
-    margin-left: 4px;
-    border: 1px solid #e8e8e8;
-    background-color: #fbfbfb;
-}
-
-%latest_news__item_pic_size {
-    height: 100px;
-    width: 319px;
-    margin-top: 4px;
-    margin-left: 4px;
-}
-
-%latest_news__item_subscr {
-    margin-top: 8px;
-    margin-left: 7px;
-    font-size: 13px;
-    color: #777777;
-}
-
-%table__item {
-    height: 66px;
-    width: 76px;
-    border: 1px solid #e8e8e8;
-    color: #777777;
-    background-color: #ffffff;
-}
-
-%slider-pic__menu_item {
-    height: 30px;
-    width: 26px;
-    float: left;
-    line-height: 30px;
+    background-position: -28px -40px;
 }
 
 .magazine {
@@ -90,7 +35,7 @@
     	background-color: #ffffff;
 
     	.magazine-menu__icon {
-    		background-image: url(../../img/natgeo/ng-magazine-mini.png);
+    		@extend %ng-sprite_icons;
     		background-repeat: no-repeat;
     		display: block;
     		height: 15px;
@@ -98,6 +43,7 @@
     		margin-top: 7px;
     		margin-left: 12px;
 			float: left;
+			background-position: -177px -184px;
     	}
 
     	.magazine-menu__title {
@@ -122,7 +68,7 @@
                 margin-top: 4px;
                 margin-right: 8px;
                 float: right;
-                background-position: -64px -73px;
+                background-position: -152px -98px;
                 
             }
         }
@@ -154,7 +100,7 @@
                 margin-right: 8px;
                 float: right;
                 display: inline-block;
-                background-position: -64px -73px;
+                background-position: -152px -98px;
                 -moz-transform: rotate(180deg);
                 -ms-transform: rotate(180deg);
                 -webkit-transform: rotate(15deg);
@@ -174,39 +120,527 @@
 		width: 940px;
 		margin-top: 10px;
 
-	    .magazine-item-list__item_first {
+	    .magazine-item-list-item-first {
 	    	height: 198px;
 	    	width: 225px;
 	    	margin-right: 10px;
 	    	float: left;
 	    	border: 1px solid #e8e8e8;
 	    	background-color: #ffffff;
+
+	    	.magazine-item-list-item-first-bg {
+	    		height: 145px;
+	    		width: 213px;
+	    		margin-top: 8px;
+	    		margin-left: 5px;
+	    		border: 1px solid #e8e8e8;
+	    		background-color: #fbfbfb;
+
+	    		.magazine-item-list-item-first-bg-pic {
+	    			height: 100px;
+	    			width: 69px;
+	    			margin-top: 10px;
+	    			margin-left: 72px;
+					background-image: url(../../img/natgeo/ng-mag_america_strikes_oil.png);
+					background-repeat: no-repeat;
+					display: block; 
+	    		}
+
+	    		.magazine-item-list-item-first-bg-text {
+	    			margin-top: 13px;
+	    			text-align: center;
+					font-size: 13px;
+    				color: #777777;
+	    		}
+	    	}
+
+	    	.magazine-item-list-item-first-bg:hover {
+	    		cursor: pointer;
+	    	}
 	    }
 
-	    .magazine-item-list__item_second {
+	    .magazine-item-list-item-first-title {
+	    	height: 43px;
+            width: 221px;
+            margin-left: 5px;
+
+            .magazine-item-list-item-first-title-rate {
+            	height: 27px;
+		        width: 75px;
+		        margin-top: 12px;
+		        float: left;
+
+		    	.magazine-item-list-item-first-title-rate-star {
+	                height: 12px;
+	                width: 75px;
+
+	                .magazine-item-list-item-first-title-rate-star__first {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-first-title-rate-star__second {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-first-title-rate-star__third {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-first-title-rate-star__fourth {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-first-title-rate-star__fifth {
+	                    @extend %latest_news__item_star_full;
+	                }
+		    	}
+	    	}
+
+            .magazine-item-list-item-first-title-rate__votes {
+                margin-top: 4px;
+                margin-left: 4px;
+                font-size: 12px;
+                color: #a0a0a0;
+            }
+
+	    	.magazine-item-list-item-first-title-subscr {
+	    		height: 31px;
+				width: 102px;
+				margin-top: 11px;
+				float: right;
+				border-top: 1px solid #e8e8e8;
+				border-left: 1px solid #e8e8e8;
+
+	            .magazine-item-list-item-first-title-subscr__icon {
+	                @extend %ng-sprite_icons;
+	                width: 18px;
+	                height: 18px;
+	                margin-top: 7px;
+	                margin-left: 6px;
+	                float: left;
+	                background-position: -91px -133px;
+	            }
+
+	            .magazine-item-list-item-first-title-subscr__spliter {
+	                height: 19px;
+	                width: 1px;
+	                margin-top: 6px;
+	                margin-left: 7px;
+	                background-color: #e8e8e8;
+	                float: left;
+
+	            }
+
+	            .magazine-item-list-item-first-title-subscr-bg {
+	                height: 33px;
+	                width: 70px;
+	                float: right;
+
+	                .magazine-item-list-item-first-title-subscr__text {
+	                    margin-top: 12px;
+	                    text-align: center;
+	                    font-size: 11px;
+	                    color: #777777;
+	                }
+	            }
+
+	            .magazine-item-list-item-first-title-subscr-bg:hover {
+	                background-color: #f3f3f3;
+	                cursor: pointer;
+	            }
+	    	}
+	    }
+
+	    .magazine-item-list-item-second {
 	    	height: 198px;
 	    	width: 226px;
 	    	margin-right: 10px;
 	    	float: left;
 	    	border: 1px solid #e8e8e8;
 	    	background-color: #ffffff;
+
+	    	.magazine-item-list-item-second-bg {
+	    		height: 145px;
+	    		width: 214px;
+	    		margin-top: 8px;
+	    		margin-left: 5px;
+	    		border: 1px solid #e8e8e8;
+	    		background-color: #fbfbfb;
+
+	    		.magazine-item-list-item-second-bg-pic {
+	    			height: 100px;
+	    			width: 76px;
+	    			margin-top: 10px;
+	    			margin-left: 69px;
+					background-image: url(../../img/natgeo/ng-mag_kids.png);
+					background-repeat: no-repeat;
+					display: block; 
+	    		}
+
+	    		.magazine-item-list-item-second-bg-text {
+	    			margin-top: 13px;
+	    			text-align: center;
+					font-size: 13px;
+    				color: #777777;
+	    		}
+	    	}
+
+	    	.magazine-item-list-item-second-bg:hover {
+	    		cursor: pointer;
+	    	}
 	    }
 
-	    .magazine-item-list__item_third {
+	    .magazine-item-list-item-second-title {
+	    	height: 43px;
+            width: 221px;
+            margin-left: 5px;
+
+            .magazine-item-list-item-second-title-rate {
+            	height: 27px;
+		        width: 75px;
+		        margin-top: 12px;
+		        float: left;
+
+		    	.magazine-item-list-item-second-title-rate-star {
+	                height: 12px;
+	                width: 75px;
+
+	                .magazine-item-list-item-second-title-rate-star__first {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-second-title-rate-star__second {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-second-title-rate-star__third {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-second-title-rate-star__fourth {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-second-title-rate-star__fifth {
+	                    @extend %latest_news__item_star_empty;
+	                }
+		    	}
+	    	}
+
+            .magazine-item-list-item-second-title-rate__votes {
+                margin-top: 4px;
+                margin-left: 4px;
+                font-size: 12px;
+                color: #a0a0a0;
+            }
+
+	    	.magazine-item-list-item-second-title-subscr {
+	    		height: 31px;
+				width: 102px;
+				margin-top: 11px;
+				float: right;
+				border-top: 1px solid #e8e8e8;
+				border-left: 1px solid #e8e8e8;
+
+				.magazine-item-list-item-second-title-subscr__icon {
+	                @extend %ng-sprite_icons;
+	                width: 18px;
+	                height: 18px;
+	                margin-top: 7px;
+	                margin-left: 6px;
+	                float: left;
+	                background-position: -91px -133px;
+	            }
+
+	            .magazine-item-list-item-second-title-subscr__spliter {
+	                height: 19px;
+	                width: 1px;
+	                margin-top: 6px;
+	                margin-left: 7px;
+	                background-color: #e8e8e8;
+	                float: left;
+
+	            }
+
+	            .magazine-item-list-item-second-title-subscr-bg {
+	                height: 33px;
+	                width: 70px;
+	                float: right;
+
+	                .magazine-item-list-item-second-title-subscr__text {
+	                    margin-top: 12px;
+	                    text-align: center;
+	                    font-size: 11px;
+	                    color: #777777;
+	                }
+	            }
+
+	            .magazine-item-list-item-second-title-subscr-bg:hover {
+	                background-color: #f3f3f3;
+	                cursor: pointer;
+	            }
+	    	}
+	    }
+
+	    .magazine-item-list-item-third {
 	    	height: 198px;
 	    	width: 226px;
 	    	margin-right: 10px;
 	    	float: left;
 	    	border: 1px solid #e8e8e8;
 	    	background-color: #ffffff;	
+
+	    	.magazine-item-list-item-third-bg {
+	    		height: 145px;
+	    		width: 214px;
+	    		margin-top: 8px;
+	    		margin-left: 5px;
+	    		border: 1px solid #e8e8e8;
+	    		background-color: #fbfbfb;
+
+	    		.magazine-item-list-item-third-bg-pic {
+	    			height: 100px;
+	    			width: 91px;
+	    			margin-top: 10px;
+	    			margin-left: 72px;
+					background-image: url(../../img/natgeo/ng-mag_lemurs.png);
+					background-repeat: no-repeat;
+					display: block; 
+	    		}
+
+	    		.magazine-item-list-item-third-bg-text {
+	    			margin-top: 13px;
+	    			text-align: center;
+					font-size: 13px;
+    				color: #777777;
+	    		}
+	    	}
+
+	    	.magazine-item-list-item-third-bg:hover {
+	    		cursor: pointer;
+	    	}
 	    }
 
-	    .magazine-item-list__item_fourth {
+	   	.magazine-item-list-item-third-title {
+	    	height: 43px;
+            width: 221px;
+            margin-left: 5px;
+
+            .magazine-item-list-item-third-title-rate {
+            	height: 27px;
+		        width: 75px;
+		        margin-top: 12px;
+		        float: left;
+
+		    	.magazine-item-list-item-third-title-rate-star {
+	                height: 12px;
+	                width: 75px;
+
+	                .magazine-item-list-item-third-title-rate-star__first {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-third-title-rate-star__second {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-third-title-rate-star__third {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-third-title-rate-star__fourth {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-third-title-rate-star__fifth {
+	                    @extend %latest_news__item_star_full;
+	                }
+		    	}
+	    	}
+
+            .magazine-item-list-item-third-title-rate__votes {
+                margin-top: 4px;
+                margin-left: 4px;
+                font-size: 12px;
+                color: #a0a0a0;
+            }
+
+	    	.magazine-item-list-item-third-title-subscr {
+	    		height: 31px;
+				width: 102px;
+				margin-top: 11px;
+				float: right;
+				border-top: 1px solid #e8e8e8;
+				border-left: 1px solid #e8e8e8;
+
+				.magazine-item-list-item-third-title-subscr__icon {
+	                @extend %ng-sprite_icons;
+	                width: 18px;
+	                height: 18px;
+	                margin-top: 7px;
+	                margin-left: 6px;
+	                float: left;
+	                background-position: -91px -133px;
+	            }
+
+	            .magazine-item-list-item-third-title-subscr__spliter {
+	                height: 19px;
+	                width: 1px;
+	                margin-top: 6px;
+	                margin-left: 7px;
+	                background-color: #e8e8e8;
+	                float: left;
+
+	            }
+
+	            .magazine-item-list-item-third-title-subscr-bg {
+	                height: 33px;
+	                width: 70px;
+	                float: right;
+
+	                .magazine-item-list-item-third-title-subscr__text {
+	                    margin-top: 12px;
+	                    text-align: center;
+	                    font-size: 11px;
+	                    color: #777777;
+	                }
+	            }
+
+	            .magazine-item-list-item-third-title-subscr-bg:hover {
+	                background-color: #f3f3f3;
+	                cursor: pointer;
+	            }
+	    	}
+	    }
+
+	    .magazine-item-list-item-fourth {
 	    	height: 198px;
 	    	width: 225px;
 	    	float: left;
 	    	border: 1px solid #e8e8e8;
 	    	background-color: #ffffff;
+
+	    	.magazine-item-list-item-fourth-bg {
+	    		height: 145px;
+	    		width: 213px;
+	    		margin-top: 8px;
+	    		margin-left: 5px;
+	    		border: 1px solid #e8e8e8;
+	    		background-color: #fbfbfb;
+
+	    		.magazine-item-list-item-fourth-bg-pic {
+	    			height: 100px;
+	    			width: 91px;
+	    			margin-top: 10px;
+	    			margin-left: 61px;
+					background-image: url(../../img/natgeo/ng-mag_polar_bears.png);
+					background-repeat: no-repeat;
+					display: block; 
+	    		}
+
+	    		.magazine-item-list-item-fourth-bg-text {
+	    			margin-top: 13px;
+	    			text-align: center;
+					font-size: 13px;
+    				color: #777777;
+	    		}
+	    	}
+
+	    	.magazine-item-list-item-fourth-bg:hover {
+	    		cursor: pointer;
+	    	}
+	    }
+
+	   	.magazine-item-list-item-fourth-title {
+	    	height: 43px;
+            width: 221px;
+            margin-left: 5px;
+
+            .magazine-item-list-item-fourth-title-rate {
+            	height: 27px;
+		        width: 75px;
+		        margin-top: 12px;
+		        float: left;
+
+		    	.magazine-item-list-item-fourth-title-rate-star {
+	                height: 12px;
+	                width: 75px;
+
+	                .magazine-item-list-item-fourth-title-rate-star__first {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-fourth-title-rate-star__second {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-fourth-title-rate-star__third {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-fourth-title-rate-star__fourth {
+	                    @extend %latest_news__item_star_full;
+	                }
+
+	                .magazine-item-list-item-fourth-title-rate-star__fifth {
+	                    @extend %latest_news__item_star_full;
+	                }
+		    	}
+	    	}
+
+            .magazine-item-list-item-fourth-title-rate__votes {
+                margin-top: 4px;
+                margin-left: 4px;
+                font-size: 12px;
+                color: #a0a0a0;
+            }
+
+	    	.magazine-item-list-item-fourth-title-subscr {
+	    		height: 31px;
+				width: 102px;
+				margin-top: 11px;
+				float: right;
+				border-top: 1px solid #e8e8e8;
+				border-left: 1px solid #e8e8e8;
+
+				.magazine-item-list-item-fourth-title-subscr__icon {
+	                @extend %ng-sprite_icons;
+	                width: 18px;
+	                height: 18px;
+	                margin-top: 7px;
+	                margin-left: 6px;
+	                float: left;
+	                background-position: -91px -133px;
+	            }
+
+	            .magazine-item-list-item-fourth-title-subscr__spliter {
+	                height: 19px;
+	                width: 1px;
+	                margin-top: 6px;
+	                margin-left: 7px;
+	                background-color: #e8e8e8;
+	                float: left;
+
+	            }
+
+	            .magazine-item-list-item-fourth-title-subscr-bg {
+	                height: 33px;
+	                width: 70px;
+	                float: right;
+
+	                .magazine-item-list-item-fourth-title-subscr__text {
+	                    margin-top: 12px;
+	                    text-align: center;
+	                    font-size: 11px;
+	                    color: #777777;
+	                }
+	            }
+
+	            .magazine-item-list-item-fourth-title-subscr-bg:hover {
+	                background-color: #f3f3f3;
+	                cursor: pointer;
+	            }
+	    	}
 	    }
     }
 }

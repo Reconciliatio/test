@@ -4,23 +4,13 @@
     display: block; 
 }
 
-%ng-sprite_icons_hover {
-    @extend %ng-sprite_icons;
-    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
-}
-
-%ng-sprite_icons_sub-menu {
-    @extend %ng-sprite_icons;
-    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
-}
-
 %latest_news__item_star_empty {
     @extend %ng-sprite_icons;
     width: 13px;
     height: 12px;
     margin-left: 2px;
     float: left;
-    background-position: -5px -51px;
+    background-position: -5px -40px;
 }
 
 %latest_news__item_star_full {
@@ -29,7 +19,7 @@
     height: 12px;
     float: left;
     margin-left: 2px;
-    background-position: -28px -51px;
+    background-position: -28px -40px;
 }
 
 %latest_news__item {
@@ -85,7 +75,7 @@
             margin-top: 8px;
             margin-left: 12px;
             float: left;
-            background-position: -157px -5px;
+            background-position: -229px -5px;
         }
 
         .title-set__text {
@@ -164,7 +154,7 @@
                 height: 16px;
                 margin-top: 7px;
                 margin-left: 12px;
-                background-position: -96px -73px;
+                background-position: -184px -98px;
             }
         }
 
@@ -185,7 +175,7 @@
                 height: 14px;
                 margin-top: 9px;
                 margin-left: 12px;
-                background-position: -189px -73px;
+                background-position: -246px -98px;
             }
         }
 

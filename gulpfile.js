@@ -27,7 +27,7 @@ var path = {
   },
   src: { 
       html: 'src/**/*.html', 
-      js: 'src/js/index.js',
+      js: 'src/js/**/*.js',
       jsx: 'src/jsx/index.js',
       style: 'src/style/**/*.scss',
       img: 'src/img/**/*.*', 
@@ -41,10 +41,7 @@ var path = {
       img: 'src/img/**/*.*',
       fonts: 'src/fonts/**/*.*'
   },
-  ignore: {
-      html: ['!src/html/coming_soon/template/*.*', '!html/natgeo/template'],
-      img: ['!src/img/coming_soon/partials/*.*', '!img/natgeo/partials/*.*']
-  },
+
   clean: './build'
 };
 

@@ -4,34 +4,6 @@
     display: block; 
 }
 
-%ng-sprite_icons_hover {
-    @extend %ng-sprite_icons;
-    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
-}
-
-%ng-sprite_icons_sub-menu {
-    @extend %ng-sprite_icons;
-    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
-}
-
-%latest_news__item_star_empty {
-    @extend %ng-sprite_icons;
-    width: 13px;
-    height: 12px;
-    margin-left: 2px;
-    float: left;
-    background-position: -5px -51px;
-}
-
-%latest_news__item_star_full {
-    @extend %ng-sprite_icons;
-    width: 13px;
-    height: 12px;
-    float: left;
-    margin-left: 2px;
-    background-position: -28px -51px;
-}
-
 %latest_news__item {
     height: 238px;
     width: 338px;
@@ -95,7 +67,7 @@
                 height: 22px;
                 margin-top: 14px;
                 margin-left: 25px;
-                background-position: -182px -5px;
+                background-position: -229px -30px;
             }
 
             .table__item_text-news {
@@ -118,7 +90,7 @@
                 height: 26px;
                 margin-top: 8px;
                 margin-left: 25px;
-                background-position: -177px -123px;
+                background-position: -214px -148px;
             }
 
             .table__item_text-magazine {
@@ -135,8 +107,8 @@
         }
 
         .table__item-magazine:hover .table__item_icon-magazine {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -41px -74px;
+            @extend %ng-sprite_icons;
+            background-position: -202px -184px;
         }
 
         .table__item-maps {
@@ -148,7 +120,7 @@
                 height: 26px;
                 margin-top: 10px;
                 margin-left: 25px;
-                background-position: -177px -159px;
+                background-position: -177px -220px;
             } 
 
             .table__item_text-maps {
@@ -165,8 +137,8 @@
         }
 
         .table__item-maps:hover .table__item_icon-maps {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -106px -5px;
+            @extend %ng-sprite_icons;
+            background-position: -213px -220px;
         }  
 
         .table__item-science {
@@ -178,7 +150,7 @@
                 height: 26px;
                 margin-top: 10px;
                 margin-left: 27px;
-                background-position: -219px -51px;
+                background-position: -265px -61px;
             }
 
             .table__item_text-science {
@@ -195,8 +167,8 @@
         }
 
         .table__item-science:hover .table__item_icon-science {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -106px -41px;
+            @extend %ng-sprite_icons;
+            background-position: -272px -97px;
         }
 
         .table__item-education {
@@ -208,7 +180,7 @@
                 height: 25px;
                 margin-top: 14px;
                 margin-left: 22px;
-                background-position: -77px -37px;
+                background-position: -5px -62px;
             }
 
             .table__item_text-education {
@@ -224,9 +196,9 @@
             color: #ffffff;
         }
 
-            .table__item-education:hover .table__item_icon-education {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -41px -5px;
+        .table__item-education:hover .table__item_icon-education {
+            @extend %ng-sprite_icons;
+            background-position: -47px -62px;
         }
 
         .table__item-games {
@@ -238,7 +210,7 @@
                 height: 25px;
                 margin-top: 14px;
                 margin-left: 24px;
-                background-position: -28px -73px;
+                background-position: -80px -98px;
             }
 
             .table__item_text-games {
@@ -255,8 +227,8 @@
         }
 
         .table__item-games:hover .table__item_icon-games {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -5px -74px;
+            @extend %ng-sprite_icons;
+            background-position: -116px -98px;
         }
 
         .table__item-events {
@@ -268,7 +240,7 @@
                 height: 26px;
                 margin-top: 14px;
                 margin-left: 24px;
-                background-position: -154px -37px;
+                background-position: -159px -62px;
             }
 
             .table__item_text-events {
@@ -285,8 +257,8 @@
         }
 
         .table__item-events:hover .table__item_icon-events {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -41px -38px;
+            @extend %ng-sprite_icons;
+            background-position: -195px -62px;
         }
 
         .table__item-blogs {
@@ -298,7 +270,7 @@
                 height: 26px;
                 margin-top: 14px;
                 margin-left: 26px;
-                background-position: -41px -5px;
+                background-position: -77px -5px;
             }
 
             .table__item_text-blogs {
@@ -315,8 +287,8 @@
         }
 
         .table__item-blogs:hover .table__item_icon-blogs {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -5px -5px;
+            @extend %ng-sprite_icons;
+            background-position: -113px -5px;
         }
 
         .table__item-explorers {
@@ -328,7 +300,7 @@
                 height: 26px;
                 margin-top: 14px;
                 margin-left: 26px;
-                background-position: -190px -37px;
+                background-position: -231px -62px;
             }
 
             .table__item_text-explorers {
@@ -345,8 +317,8 @@
         }
 
         .table__item-explorers:hover .table__item_icon-explorers {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -77px -38px;
+            @extend %ng-sprite_icons;
+            background-position: -5px -98px;
         }
 
         .table__item-trips {
@@ -358,7 +330,7 @@
                 height: 21px;
                 margin-top: 14px;
                 margin-left: 26px;
-                background-position: -128px -170px;
+                background-position: -5px -248px;
             }
 
             .table__item_text-trips {
@@ -375,8 +347,8 @@
         }
 
         .table__item-trips:hover .table__item_icon-trips {
-            @extend %ng-sprite_icons_sub-menu;
-            background-position: -5px -41px;
+            @extend %ng-sprite_icons;
+            background-position: -41px -248px;
         }
     }
 }

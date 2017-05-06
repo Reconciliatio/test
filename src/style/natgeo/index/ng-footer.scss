@@ -1,5 +1,176 @@
+%ng-sprite_icons {
+    background-image: url(../../img/natgeo/ng-sprite_icons.png);
+    background-repeat: no-repeat;
+    display: block; 
+}
+
 .footer	{
 	height: 70px;
 	width: 940px;
 	background-color: #242424;
+
+	.footer-container {
+		height: 41px;
+		width: 922px;
+		margin-top: 18px;
+		margin-left: 9px;
+		display: inline-block;
+		
+		.footer-form {
+			width: 282px;
+			float: left;
+			::-webkit-input-placeholder {color:#848484; margin-left: 10px; font-style: italic;}
+			::-moz-placeholder          {color:#848484; margin-left: 10px; font-style: italic;}
+			:-moz-placeholder           {color:#848484; margin-left: 10px; font-style: italic;}
+			:-ms-input-placeholder      {color:#848484; margin-left: 10px; font-style: italic;}
+
+			.footer-container__input {
+				height: 33px;
+				margin-top: 1px;
+				padding-left: 9px;
+				float: left;
+				background-color: #282828;
+				border-radius: 3px 0px 0px 3px;;
+				border-top: 1px solid #232323;
+				border-right: none;
+				border-left: 1px solid #232323;
+				border-bottom: 1px solid #232323;
+				box-shadow: 2px -2px 2px -2px #171717;
+			}
+
+			.footer-container__input:focus {
+				color: #838383;
+			}
+
+			.footer-container__input:focus {
+			    outline: none;
+			}
+			
+			.footer-container-button-bg {
+				height: 36px;
+				width: 101px;
+				background-color: #282828;
+				display: inline-block;
+				border-radius: 0px 3px 3px 0px;;
+				border-top: 1px solid #1e1e1e;
+				border-right: 1px solid #1e1e1e;
+				border-left: none;
+				border-bottom: 1px solid #232323;
+				//-webkit-box-shadow: inset -1px 0px 0px 1px rgba(35,35,35,1);
+				//-moz-box-shadow: inset -1px 0px 0px 1px rgba(35,35,35,1);
+				box-shadow: inset -1px 0px 0px 1px rgba(35,35,35,1);
+				//box-shadow: inset 0 -5px 5px -5px #333;
+
+				.footer-container-button {
+					height: 33px;
+					width: 99px;
+					margin-top: 2px;
+					background-color: #1f1f1f;
+					border-radius: 3px;
+					border: 1px solid #292929;
+					-webkit-box-shadow: 0px 0px 0px 1px rgba(37,37,37,1);
+					-moz-box-shadow: 0px 0px 0px 1px rgba(37,37,37,1);
+					box-shadow: 0px 0px 0px 1px rgba(37,37,37,1);
+					color: #848484;
+					font-size: 11px;
+				}
+
+				.footer-container-button:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		.footer-facebook-bg {
+			@extend %ng-sprite_icons;
+			width: 13px;
+		    height: 25px;
+		    margin-top: 6px;
+		    margin-left: 16px;
+		    display: inline-block;
+		    background-position: -34px -98px;
+		}
+
+		.footer-facebook-bg:hover {
+		    background-position: -57px -98px;
+		}
+
+		.footer-twitter-bg {
+			@extend %ng-sprite_icons;
+			width: 30px;
+		    height: 25px;
+		    margin-top: 6px;
+		    margin-left: 6px;
+		    display: inline-block;
+		    background-position: -249px -248px;
+		}
+
+		.footer-twitter-bg:hover {
+		    background-position: -307px -5px;
+		}
+
+		.footer-youtube-bg {
+			@extend %ng-sprite_icons;
+			width: 19px;
+		    height: 19px;
+		    margin-left: 8px;
+		    margin-bottom: 3px;
+		    display: inline-block;
+		    background-position: -305px -88px;
+		}
+
+		.footer-youtube-bg:hover {
+		    background-position: -305px -117px;
+		}
+
+		.footer-info {
+			height: 41px;
+			width: 417px;
+			float: right;
+
+			.footer-info__spliter {
+				height: 12px;
+				width: 1px;
+				margin-left: 9px;
+				margin-right: 9px;
+				float: left;
+				background-color: #777777;
+			}
+
+			.footer-info__service {
+				text-decoration: none;
+				color: #bbbbbb;
+				font-size: 13px;
+				float: left;
+			}
+
+			.footer-info__advirtise {
+				text-decoration: none;
+				color: #bbbbbb;
+				font-size: 13px;
+				float: left;
+			}
+
+			.footer-info__terms {
+				text-decoration: none;
+				color: #bbbbbb;
+				font-size: 13px;
+				float: left;
+			}
+
+			.footer-info__privacy {
+				text-decoration: none;
+				color: #bbbbbb;
+				font-size: 13px;
+				float: left;
+			}
+
+			.footer-info__copyright {
+				margin-top: 24px;
+				text-align: center;
+				color: #777777;
+				font-size: 13px;
+			}
+		}
+	}
 }

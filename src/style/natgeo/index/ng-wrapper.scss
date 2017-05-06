@@ -4,17 +4,6 @@
     display: block; 
 }
 
-%ng-sprite_icons_hover {
-    @extend %ng-sprite_icons;
-    background-image: url(../../img/natgeo/ng-sprite_icons_hover.png);
-}
-
-%ng-sprite_icons_sub-menu {
-    @extend %ng-sprite_icons;
-    background-image: url(../../img/natgeo/ng-sprite_icons_sub-menu.png);
-}
-
-
 .wrapper {
     width: 941px;
     margin-top: 37px;
@@ -28,7 +17,7 @@
             height: 48px;
             width: 162px;
             margin-top: 2px;
-            background-position: -5px -112px;
+            background-position: -5px -171px;
             float: left;
         }
 
@@ -40,6 +29,10 @@
             border-radius: 3px;
             float: left;
             background-color: #ffffff;
+            ::-webkit-input-placeholder {color:#e8e8e8; font-style: italic;}
+            ::-moz-placeholder          {color:#e8e8e8; font-style: italic;}
+            :-moz-placeholder           {color:#e8e8e8; font-style: italic;}
+            :-ms-input-placeholder      {color:#e8e8e8; font-style: italic;}
 
             .search-input__searchicon {
                 @extend %ng-sprite_icons;
@@ -47,7 +40,7 @@
                 width: 21px;
                 margin-top: 14px;
                 margin-left: 10px;
-                background-position: -215px -87px;
+                background-position: -34px -133px;
                 float: left;
             }
 
@@ -59,6 +52,10 @@
                 border: none;
                 float: left;
                 background-color: #ffffff;
+            }
+
+            .search-input__text:focus {
+                color:#a8a8a8;
             }
 
             .search-input__text:focus {
@@ -172,7 +169,7 @@
                     @extend %ng-sprite_icons;
                     width: 22px;
                     height: 22px;
-                    background-position: -64px -73px;
+                    background-position: -152px -98px;
                     display: inline-block;
                     margin-top: 13px;
                     margin-left: 9px;
@@ -206,7 +203,7 @@
                     @extend %ng-sprite_icons;
                     width: 16px;
                     height: 16px;
-                    background-position: -241px -118px;
+                    background-position: -149px -33px;
                     margin-top: 9px;
                     margin-left: 30px;
                 }
@@ -245,7 +242,7 @@
                     @extend %ng-sprite_icons;
                     width: 14px;
                     height: 16px;
-                    background-position: -189px -97px;
+                    background-position: -246px -122px;
                     margin-top: 8px;
                     margin-left: 31px;
                 }
