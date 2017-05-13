@@ -1,0 +1,254 @@
+// base
+
+li {
+	list-style-type: none;
+}
+
+body {
+	font-family: "Open Sans", "Arial", sans-serif;
+	min-width: 1020px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.clearfix::before, .clearfix::after {
+	content: "";
+	display: table;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+// header
+
+.main-header {
+	background-color: #262933;
+	padding: 35px 0;
+
+	&_right {
+		width: 500px;
+		float: right;
+	}
+
+	.social {
+		float: right;
+		width: 130px;
+		text-align: right;
+	}
+}
+
+.logo {
+	float: left;
+	width: 250px;
+	font-size: 24px;
+	color: #fff;
+	line-height: 28px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.main-navigation {
+	margin-left: 44px;
+	font-size: 0px;
+	float: left;
+	width: 310px;
+
+	a {
+		display: inline-block;
+		vertical-align: top;
+		line-height: 28px;
+		font-size: 12px;
+		color: #9d9fa5;
+		font-weight: 700;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-right: 35px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.active, &:hover {
+			color: #fff;
+		}
+	}
+}
+
+.social {
+	font-size: 0;
+
+	&_item {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 12px;
+		width: 28px;
+		height: 28px;
+		background-color: #fff;
+		border-radius: 50px;
+		margin-right: 17px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			background: transparent;
+		}
+	}
+}
+
+// about
+.about {
+	background-color: #fff;
+	background: url("../../img/jack/j-bg-top.jpg") no-repeat center top;
+	background-size: 100% 345px;
+
+	&_title {
+		margin: 0;
+		font-size: 30px;
+		line-height: 43px;
+		color: #fff;
+		font-weight: 400;
+		text-align: center;
+		padding-top: (160px - 43px) / 2;
+		padding-bottom: (160px - 43px) / 2;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	&_text {
+		font-size: 24px;
+		line-height: 30px;
+		color: #848b90;
+		padding-top: (136px - 30px) / 2;
+		padding-bottom: (136px - 30px) / 2;
+
+		span {
+			font-size: 15px;
+			float: right;
+		}
+
+		a {
+			color: #43b5fd;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.box {
+		padding: 60px 560px 60px 60px;
+		box-sizing: border-box;
+		width: 100%;
+		border: 7px solid #fff;
+		box-shadow: 1px 0 3px rgba(0, 0, 0, .3);
+		background-color: #2b2d37;
+		background-image: url("../../img/jack/j-bg-box.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+
+		&_title {
+			font-size: 28px;
+			line-height: 32px;
+			color: #fff;
+			margin-bottom: 15px;
+		}
+
+		&_href {
+			font-size: 16px;
+			color: #43b5fd;
+			line-height: 20px;
+			text-decoration: none;
+
+		}
+
+		p {
+			font-size: 13px;
+			line-height: 24px;
+			color: #c8c8c8;
+		}
+
+		.btn {
+			margin-right: 15px;
+		}
+	}
+
+	.btn {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 12px;
+		line-height: 20px;
+		color: #fff;
+		text-align: center;
+		font-weight: 700;
+		text-decoration: none;
+		padding: 6px 27px;
+		background-color: #43b5fd;
+		border: 3px solid #43b5fd;
+		box-sizing: border-box;
+		border-radius: 15px;
+
+		&:hover {
+			background: darken(#43b5fd, 10%);
+			border: 3px solid darken(#43b5fd, 10%);
+		}
+
+		&:active {
+			background: transparent;
+			border: 3px solid #43b5fd;
+		}
+
+		&--transparent {
+			background: transparent;
+			border: 3px solid #6b7a85;
+
+			&:hover {
+				border: 3px solid #43b5fd;
+			}
+
+			&:active {
+				border: 3px solid transparent;
+			}
+		}
+	}
+}
+
+.features {
+	padding: 80px 0;
+	background: url("../../img/jack/j-bg-top.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.features-item {
+	width: 250px;
+	float: left;
+	text-align: center;
+	color: #fff;
+
+	&_image {
+
+	}
+
+	&_title {
+		font-size: 20px;
+		line-height:26px;
+		font-weight: 600px;
+		margin-bottom: 25px;
+	}
+
+	p {
+		font-size: 13px;
+		line-height: 24px;
+		font-weight: 400px;
+	}
+}
